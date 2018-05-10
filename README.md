@@ -1,0 +1,1 @@
+Image with responsive view
