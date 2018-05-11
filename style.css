@@ -12,19 +12,19 @@ header{
 }
 .wrapper{
     width: 100%;
-    max-width: 960px;
-    margin: 6% auto;
+    max-width: 896px;
+    margin: 6% 16%;
 }
 .flex-container{
     display: flex;
     background: #fff;
     flex-wrap: wrap;
 /*    justify-content: space-around;*/
+/*    flex: 1 1;*/
 }
 .box{
     height: 220px;
-    flex-basis: 300px;
-/*    padding-right: 2%;*/
+    flex-basis: 280px;
     padding-bottom: 1%;
 }
 img{
@@ -58,4 +58,42 @@ div:nth-of-type(3n+2){
 }
 div:nth-of-type(3n+0){
     margin-left: 3.1%;
+}
+@media screen and (max-width: 1060px){
+    .wrapper{
+        max-width: 578px;
+        margin: 6% 20%;
+    }
+    div:nth-of-type(3){
+        margin-left: 0;
+    }
+    div:nth-of-type(4){
+        margin-left: 3.1%;
+    }
+    div:nth-of-type(5){
+        margin-left: 0;
+    }
+}
+@media screen and (max-width: 768px){
+    div:nth-of-type(2n+2){
+        margin-left: 3.1%;
+    }
+    .wrapper{
+        margin: 6% 12%;
+    } 
+}
+
+@media screen and (max-width: 425px){
+     div:nth-of-type(2n+2){
+        margin-left: 0;
+     }
+     .wrapper{
+        width: 65%;
+        margin-left:  18%;
+    }
+    img{
+    margin: 0;
+    width: 100%;
+    height: 80%;
+}
 }
